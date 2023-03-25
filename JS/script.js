@@ -1,10 +1,11 @@
 'use strict'
 
-console.log('arr' + ' - objext');
+const btn = document.getElementById('btn');
+const box = document.getElementById('box');
 
-let incr = 10, decr = 11
+console.log(box);
 
-//
-
-console.log(false && true);
-console.log(incr || decr);
+console.log(btn);
+btn.addEventListener('click', function() {
+    box.classList.toggle('anim')
+})

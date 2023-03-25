@@ -1,0 +1,42 @@
+.btn {
+    margin-bottom: 120px;
+}
+
+.box {
+    width: 200px;
+    height: 200px;
+    background: linear-gradient(to left, rgb(43, 19, 184),rgb(15, 131, 199));
+    border-top-left-radius: 127px;
+    border-bottom-right-radius: 127px;
+    
+}
+
+.box.anim {
+    animation: animateBox;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes animateBox {
+    0% {
+        transform: translateX(0);
+    }
+
+
+    50% {
+        transform: translateX(150px) rotate(120deg);
+        background: linear-gradient(to left, rgb(19, 184, 60),rgb(214, 184, 13));
+        border-radius: 50%;
+    }
+
+    100% {
+        
+        transform: translateX(350px) rotate(320deg);
+        background: linear-gradient(to left, rgb(184, 19, 60),rgb(13, 214, 197));
+        border-top-left-radius: 127px;
+        border-bottom-right-radius: 127px;
+    }
+
+
+}
+
