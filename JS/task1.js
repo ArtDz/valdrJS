@@ -1,5 +1,5 @@
 'use strict'
-
+/*
 const numberOfFilms = prompt('Сколько фильмов вы уже посмотрели?','0')
 
 const personalMovieDB = {
@@ -22,3 +22,4 @@ personalMovieDB.movies[lastWatchedFilm1] = lastWatchedFilm_1_Score
 personalMovieDB.movies[lastWatchedFilm2] = lastWatchedFilm_2_Score
 
 console.log(personalMovieDB)
+*/
