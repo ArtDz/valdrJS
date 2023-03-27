@@ -1,36 +1,20 @@
-if (22 < 22) {
-    console.log('yes');
-} else if (11 !== 2) {
-    console.log('yesss');
-} else {
-    console.log(no);
+'use strict'
+
+
+
+function createCounter() {
+    let counter = 0
+
+    return function () {
+        counter = counter + 1
+        return counter
+    }
 }
 
-50 === 51 ? console.log('yes its 50') : console.log('no its not 50');
+const increment = createCounter()
 
-switch (typeof 11) {
-    case "number":
-        console.log('yes itss 11');
-        break
-    case 22:
-        console.log('noooo');
-        break
-    default:
-        console.log('no');
-        break
-}
+const c1 = increment()
+const c2 = increment()
+const c3 = increment()
 
-const burger = 4
-const fries = 1
-
-if(burger && fries) console.log('Eat it');
-
-const f1 = function() {
-    console.log('сработала первая сложная функция');
-}
-
-const f2 = function() {
-    console.log('сработала second сложная функция');
-}
-
-44 === '44' ? f1() : f2()
+console.log(c1, c2, c3)
