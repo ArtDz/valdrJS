@@ -1,25 +1,40 @@
 'use strict'
-/*
-const numberOfFilms = prompt('Сколько фильмов вы уже посмотрели?','0')
+
+const numberOfFilms = +prompt('Сколько фильмов вы уже посмотрели?','0')
 
 const personalMovieDB = {
     count: numberOfFilms,
     movies: {},
     actors: {},
     genres: [],
-    privat: false
+    private: false
 }
+
+console.log('start')
 
 const question_1 = 'Один из последних просмотренных фильмов?'
 const question_2 = 'На сколько его оцените?'
 
-const lastWatchedFilm1 = prompt(question_1,''),
-      lastWatchedFilm_1_Score = prompt(question_2,''),
-      lastWatchedFilm2 = prompt(question_1,''),
-      lastWatchedFilm_2_Score = prompt(question_2,'')
 
-personalMovieDB.movies[lastWatchedFilm1] = lastWatchedFilm_1_Score
-personalMovieDB.movies[lastWatchedFilm2] = lastWatchedFilm_2_Score
+for (let i = 1; i < 3; i++) {
+  const lastWatchedFilm1 = prompt(question_1,'').trim()
+  if (lastWatchedFilm1.length < 1 || lastWatchedFilm1.length > 10) {
+    i--
+    continue
+  }
+  personalMovieDB.movies[lastWatchedFilm1] = prompt(question_2, '').trim()
+
+}
+
+if (personalMovieDB.count < 10) {
+  console.log('Просмотрено мало фильмов')
+} else if (personalMovieDB.count > 10 && personalMovieDB.count < 30) {
+  console.log('Вы классический зритель')
+} else if (personalMovieDB.count > 30) {
+  console.log('Вы киноман')
+} else {
+  console.log('Произошла ошибка')
+}
 
 console.log(personalMovieDB)
-*/
+

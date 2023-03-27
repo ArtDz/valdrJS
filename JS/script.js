@@ -6,3 +6,4 @@ const box = document.getElementById('box');
 btn.addEventListener('click', function() {
     box.classList.toggle('anim')
 })
+

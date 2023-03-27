@@ -5,6 +5,14 @@ while (x < 15) {
     x++
 }
 
+const btn = document.getElementById('btn');
+const box = document.getElementById('box');
+
+
+btn.addEventListener('click', function() {
+    box.classList.toggle('anim')
+})
+
 let y = 5
 
 do {
